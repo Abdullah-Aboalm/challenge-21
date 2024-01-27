@@ -1,0 +1,191 @@
+:root {
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -mos-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+body {
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background-color: black;
+}
+
+.card {
+  width: 25%;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(36, 34, 34);
+}
+
+.card .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 41, 41);
+}
+
+.card .image img {
+
+}
+
+.card h1 {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: grey;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.card .rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card .rating span {
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: grey;
+  background-color: rgb(43, 41, 41);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.card .rating span:hover {
+  background-color: rgb(255, 149, 0);
+  color: white;
+}
+
+.card .rating .active {
+  background-color: rgb(202, 200, 200);
+  color: white;
+}
+
+.card button {
+  display: block;
+  width: 95%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(255, 149, 0);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  color: rgb(255, 149, 0);
+  background-color: white;
+}
+
+/* after click */
+
+.thanks {
+  width: 25%;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgb(36, 34, 34);
+  display: none;
+}
+
+.thanks img {
+  margin-top: 10px;
+}
+
+.thanks .rate {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px !important;
+  color: rgb(255, 149, 0);
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(43, 41, 41);
+}
+
+.thanks h1 {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.thanks p {
+  color: grey;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* back button */
+
+.back {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: rgb(255, 149, 0);
+  background-color: rgb(43, 41, 41);
+  cursor: pointer;
+}
+
+/* mobile */
+
+@media screen and (max-device-width: 640px) {
+  .card {
+    width: 85%;
+  }
+  .thanks {
+    width: 65%;
+    margin-left: 20px;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .card {
+      width: 45%;
+    }
+  
+  .thanks {
+    width: 45%;
+    margin-left: 20px;
+  }
+}
